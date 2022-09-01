@@ -1,0 +1,24 @@
+{
+  "name": "desafiotecnico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run --reporter mochawesome --steps",
+    "android": "PLATFORM=Android APP=C:\\Workspace\\builders\\challenge-qa.apk DEVICE=Pixel2 VERSION=10.0 PACKAGE=io.platformbuilders.challenge.qa ACTIVITY=host.exp.exponent.MainActivity npx codeceptjs run --steps",
+    "ios": "PLATFORM=IOS APP=<caminho aqui> DEVICE=<device aqui> VERSION=<versão aqui> PACKAGE=<package aqui> ACTIVITY=<activity aqui> npx codeceptjs run --steps"
+  },
+  "keywords": [],
+  "author": "Rafael Torres <squashegisa2@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.3.5",
+    "faker-br": "^0.4.1",
+    "mochawesome": "^7.1.3",
+    "node-random-name": "^1.0.1",
+    "webdriverio": "^7.23.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
